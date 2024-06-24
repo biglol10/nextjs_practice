@@ -27,7 +27,7 @@ Notion: https://zerocho.notion.site/Next-js14-7ff657dc0ec544759d0fc2e6e28da057
     3. i/flow/login은 그럼 항상 가로채기 당하니까 필요없다고 생각할 수 있지만 새로고침하면 여기로 넘어옴. 브라우저를 통해 처음 실행하면 이걸로 나오고 Link를 통해서 들어가면 가로채기
 11. 주소창이 안 뜨는거 3개 - (afterLogin), @modal, _component
     1. (afterLogin) - 그룹폴더. 그룹폴더의 주요 역할은 layout을 두는거
-    2. @modal은 parrelel route. 한 화면에 2개의 페이지를 동시에 보여줄 때
+    2. @modal은 parrelel route. 한 화면에 2개의 페이지를 동시에 보여줄 때. 혹시나 모달이 여러개면 @modal2, @modal3 이런식으로. layout에 modal2, modal3을 추가해주면 됨
     3. _component는 private folder. 주소창에 영향을 주지 않는 폴더. 주로 공통된 소스를 넣는다
 12. Server component는 client component를 import할 수 있지만, client component는 server component를 import할 수 없다. ++ 실제로는 client component에 server component를 import할 수는 있지만, 이 때 server component는 client component로 변경된다는 점이 있다.
 13. 
